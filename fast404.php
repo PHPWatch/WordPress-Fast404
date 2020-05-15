@@ -3,12 +3,10 @@
 /**
  * Plugin Name: Fast 404
  * Version:     1.0
- * Description: Prevent WordPress from deliverying full Page-Not-Found errors when the browser is not expecting a full
- * HTML page. Saves bandwidth and improvemes performance.
+ * Description: Prevent WordPress from deliverying full Page-Not-Found errors when the browser is not expecting a full HTML page. Saves bandwidth and improvemes performance.
  * Licence:     GPLv2 or later
  * Author:      Ayesh Karunaratne
  * Author URI:  https://ayesh.me/open-source
- * @param string $request_uri
  */
 
 declare(strict_types=1);
