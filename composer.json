@@ -3,14 +3,30 @@
     "description": "WordPress plugin to prevent WordPress from deliverying full Page-Not-Found errors when the browser is not expecting a full HTML page. Saves bandwidth and improves performance.",
     "type": "wordpress-plugin",
     "license": "GPL-2.0-or-later",
-    "authors": [
-        {
-            "name": "Ayesh Karunaratne",
-            "email": "ayesh@ayesh.me"
-        }
-    ],
+    "keywords": ["wordpress", "performance", "404"],
+    "homepage": "https://wordpress.org/plugins/fast404/",
+    "support": {
+        "source": "https://github.com/PHPWatch/WordPress-Fast404",
+        "issues": "https://github.com/PHPWatch/WordPress-Fast404/issues",
+        "forum": "https://wordpress.org/support/plugin/fast404/"
+    },
     "minimum-stability": "stable",
     "require": {
         "php": "^7.1"
+    },
+    "authors": [
+        {
+            "name": "Ayesh Karunaratne",
+            "email": "ayesh@ayesh.me",
+            "homepage": "https://ayesh.me"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "fast404.php"
+        ]
+    },
+    "suggest": {
+        "ayesh/wordpress-password-hash": "Improvements for WordPress's password hashing to use PHP native password hashing."
     }
 }
