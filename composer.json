@@ -1,0 +1,16 @@
+{
+    "name": "phpwatch/wordpress-fast404",
+    "description": "WordPress plugin to prevent WordPress from deliverying full Page-Not-Found errors when the browser is not expecting a full HTML page. Saves bandwidth and improves performance.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Ayesh Karunaratne",
+            "email": "ayesh@ayesh.me"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.1"
+    }
+}
