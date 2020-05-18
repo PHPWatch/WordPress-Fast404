@@ -18,6 +18,10 @@ use function http_response_code;
 use function preg_match;
 use function strpos;
 
+if (!defined('ABSPATH')) {
+    die();
+}
+
 /**
  * Evaluate the conditions for a fast-404
  *
