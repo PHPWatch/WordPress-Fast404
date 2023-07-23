@@ -3,7 +3,7 @@ Contributors: ayeshrajans
 Tags: performance, 404, page-not-found
 Requires at least: 3.9.2
 Tested up to: 6.3
-Stable tag: 1.0.1
+Stable tag: 1.2
 Requires PHP: 7.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -63,3 +63,6 @@ You cannot. The whole point of this plugin is to save server resources when the 
 = 1.0.1 =
 * Updates the WordPress core version this plugin was tested against.
 * Minor text improvements.
+
+= 1.2 =
+* Same version as 1.0.1, but with a consistent version number bump.
