@@ -2,8 +2,8 @@
 Contributors: ayeshrajans
 Tags: performance, 404, page-not-found
 Requires at least: 3.9.2
-Tested up to: 5.4
-Stable tag: 1.0
+Tested up to: 6.3
+Stable tag: 1.0.1
 Requires PHP: 7.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -12,13 +12,13 @@ Prevents WordPress from delivering full Page-Not-Found errors when the browser i
 
 == Description ==
 
-Fast 404 is a low foot-print plugin that quickly inspects an incoming HTTP request, and terminates the request as soon as possible if the request is for a non-existing resource. If the browser is expecting an HTML page (indicated by the `Accept` HTTP header), this plugin will not intercept it. For all other requests, this plugin will terminate it immedaitely, saving server resources and bandwidth.
+Fast 404 is a low foot-print plugin that quickly inspects an incoming HTTP request, and terminates the request as soon as possible if the request is for a non-existing resource. If the browser is expecting an HTML page (indicated by the `Accept` HTTP header), this plugin will not intercept it. For all other requests, this plugin will terminate it immediately, saving server resources and bandwidth.
 
 When a user browser requests a resource (such as a `jpg` image, or a `.woff2` font file), the web server sends this resource if it is available in the requested location. If the file does not exist, the request is forwarded to WordPress to handle. Unless you are using a plugin that dynamically generates these files, these file-not-found requests trigger a full WordPress Page-Not-Found error page. This plugin inspects such incoming requests, and if the browser indicates that it is looking for a resource other than an HTML page, this plugin terminates the request as soon as possible to prevent WordPress from serving this request which would be a waste of resources and bandwidth. This plugin carefully makes sure that the short-circuited 404 pages (which just shows "Not Found" on a blank page) is only returned to browser asset requests, and not for end users who expect an HTML page.
 
 By default, all HTTP requests to `js|css|jpg|jpeg|gif|png|webp|ico|exe|bin|dmg|woff|woff2` extensions will be fast 404'd. You can configure the extensions and even configure an exclusion pattern to prevent this plugin from intercepting certain requests.
 
-This plugin is the WordPress port of [phpwatch/fast404](https://github.com/PHPWatch/Fast404) package.
+This plugin is the WordPress port of [PHPWatch/Fast404](https://github.com/PHPWatch/Fast404) package.
 
 == Installation ==
 
@@ -59,3 +59,7 @@ You cannot. The whole point of this plugin is to save server resources when the 
 
 = 1.0 =
 * Initial release.
+
+= 1.0.1 =
+* Updates the WordPress core version this plugin was tested against.
+* Minor text improvements.

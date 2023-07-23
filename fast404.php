@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: Fast 404
- * Version:     1.0
+ * Version:     1.0.1
  * Description: Prevent WordPress from delivering full Page-Not-Found errors when the browser is not expecting a full HTML page. Saves bandwidth and improvements performance.
  * Licence:     GPLv2 or later
  * Author:      Ayesh Karunaratne
@@ -26,7 +26,7 @@ if (!defined('ABSPATH')) {
  * Evaluate the conditions for a fast-404
  *
  * If the regex is not provided, we need to immediately exit. Next, the $accept_header is checked for a simple string
- * match for the allowed mime. It is not configurable as of yet to prevent user-errors, and a regex is not used for
+ * match for the allowed mime. It is not configurable yet to prevent user-errors, and a regex is not used for
  * performance. If both these conditions are met, the main expression is evaluated, and if it matches, tries to exclude
  * if an exclude expression is configured.
  *
